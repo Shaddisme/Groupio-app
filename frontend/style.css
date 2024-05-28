@@ -1,0 +1,346 @@
+:root {
+    --dark-green: #145245;
+    --pale-color: #ebf4f2;
+    --green-color: #1e7b68;
+    --green-blue: #a9f8e7; 
+    --black: #0f0f0f;
+    --background-light:#f2fefb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: var(--dark-green);
+    border-radius: 10px;
+}
+
+#navbar{
+    background: transparent;
+    padding: 0px 9% 0px;
+}
+
+#logo img{
+    margin-top: 3px;
+}
+
+.nav-item .nav-link{
+    font-family: 'Open Sans';
+    color: var(--dark-green);
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; */
+}
+
+.nav-item .nav-link:hover{
+    color: var(--green-color);
+}
+
+#app-btn{
+    background-color: var(--dark-green);
+    padding: 16px 24px;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 25px;
+    width: 173px;
+    border-radius: 1000px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 10px;
+    transition: all 0.4s;
+}
+
+.app-btn:hover{
+   color: var(--green-color);
+}
+
+.bg-holder{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 8;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login{
+    background-color: #fff;
+}
+
+.btn-login{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn-login i{
+    vertical-align: text-top;
+}
+
+.divider-content-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.divider{
+    margin: 2rem 0;
+}
+
+.btn-outline-custom{
+    color: var(--black);
+}
+
+.btn-outline-custom:hover{
+    color: var(--black);
+    background-color: var(--green-color);
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    padding: 5px 11% 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+.home .img img{
+    width: 100%;
+    margin-left: 60px;
+}
+
+.home-content{
+    flex: 1 1 400px;
+    margin-top: 30px;
+}
+
+.home-content h1{
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.home-content h1 span{
+    color: var(--green-color);
+}
+
+#home-btn{
+    background-color: var(--dark-green);
+    padding: 16px 24px;
+    font-family: 'Open Sans';
+    text-align: center;
+    line-height: 25px;
+    width: 173px;
+    border-radius: 1000px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 10px;
+    transition: all 0.4s;
+}
+
+#hom3-btn:hover{
+    color: var(--green-color);
+}
+
+.feature-section{
+    width: 100%;
+    height: 20vh;
+    padding: 5px 11% 80px;
+    z-index: 0;
+}
+
+.feature-section h2 {
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    /* text-align: center; */
+}
+
+.feature-section p {
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    /* text-align: center; */
+}
+
+.itinerary-section {
+    background-color: var(--green-blue);
+    /* height: 100vh;
+    padding: 80px 11% 80px; */
+}
+
+.itinerary-section h2 {
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.itinerary-section p {
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 400;
+    /* margin: 30px 0; */
+}
+
+.itinerary-section ul {
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 700;
+    /* margin: 30px 0; */
+}
+
+.expense-section h2{
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.expense-section p{
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.expense-section ul{
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.comms-section{
+    background-color: var(--green-blue);
+}
+
+.comms-section h2{
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.comms-section p{
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.comms-section ul{
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.decision-section h2{
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.decision-section p{
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.decision-section ul{
+    font-family: Open Sans Hebrew;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.testimonial-section{
+    background: var(--green-color);
+    color: var(--black);
+}
+
+.wrapper-contact {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--dark-green);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-green);
+    color: wh;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px;
+} 
+
+form button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--green-blue);
+}
+
+@media screen and (max-width:991px){
+    .home .img img{
+        margin-left: 0px;
+    }
+
+    .sidebar{
+        background-color: var(--green-color);
+        backdrop-filter: blur(10px);
+    }
+}
+
