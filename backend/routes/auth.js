@@ -27,7 +27,7 @@ router.post('/signup', async (req, res) => {
     const payload = {
       user: {
         id: user.id,
-        username: user.username
+        username: user.username,
       },
     };
 
@@ -63,12 +63,15 @@ router.post('/login', async (req, res) => {
     const payload = {
       user: {
         id: user.id,
-        username: user.username
+        username: user.username,
       },
     };
 
     jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' }, (err, token) => {
-      if (err) throw err;
+      if (err) {
+        console.error('JWT signing error:', err.message);
+        throw err;
+      }
       res.cookie('token', token, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
@@ -81,5 +84,6 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ msg: 'Server error' });
   }
 });
+
 
 module.exports = router;
